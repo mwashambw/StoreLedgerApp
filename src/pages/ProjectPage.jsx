@@ -104,7 +104,7 @@ function Project() {
       <ProjectName>{projectName}</ProjectName>
       <NewRow type="horizontal">
         <ItemsNumber>
-          ITEMS #: <span>450</span>
+          ITEMS #: <span>{items.length}</span>
         </ItemsNumber>
         {/* <ItemsNumber>
           Total Items: <span>{items.length}</span>
