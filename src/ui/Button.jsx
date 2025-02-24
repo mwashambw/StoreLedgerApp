@@ -9,11 +9,16 @@ const StyledButton = styled.button`
   align-items: center;
   gap: 0.6rem;
 
-  @media (max-width: 36rem) {
-    font-size: 1.4rem;
-    padding: 0.6rem 0.4rem;
-    gap: 0.1rem;
-  }
+  ${(props) =>
+    props.isScale &&
+    css`
+      @media (max-width: 36rem) {
+        font-size: 1.4rem;
+        padding: 0.6rem 0.4rem;
+        gap: 0.1rem;
+      }
+    `}
+
   /* justify-content: center; */
   /* justify-content: space-between; */
 
@@ -60,13 +65,14 @@ const StyledButton = styled.button`
     `}
 `;
 
-function Button({ onClick, children, type, role = '', disabled }) {
+function Button({ onClick, children, type, role = '', disabled, isScale }) {
   return (
     <StyledButton
       onClick={onClick}
       variation={type}
       type={role}
       disabled={disabled}
+      isScale={isScale}
     >
       {children}
     </StyledButton>

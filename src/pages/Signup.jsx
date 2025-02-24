@@ -112,7 +112,7 @@ function Signup() {
         </InputWithIcon>
         {/* <InputWithIcon placeholder="password" /> */}
         <AuthButtonContainer>
-          <Button type="primary">
+          <Button type="primary" disabled={isPending}>
             <TextInButton>
               {isPending ? (
                 <>

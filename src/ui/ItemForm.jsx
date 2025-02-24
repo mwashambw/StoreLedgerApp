@@ -120,19 +120,6 @@ function ItemForm({ onClose }) {
           disabled={isPending}
         />
       </InputContainer>
-      {/* <InputContainer>
-        <label htmlFor="from">Value</label>
-        <input id="from" type="number" disabled />
-      </InputContainer> */}
-      {/* <InputContainer>
-        <label htmlFor="project-name">Project Status</label>
-        <select>
-          <option value="awaiting">Awaiting</option>
-          <option value="building">Building</option>
-          <option value="completed">Completed</option>
-        </select>
-      </InputContainer> */}
-
       <ButtonContainer>
         <Button type="secondary" role="reset" disabled={isPending}>
           Reset

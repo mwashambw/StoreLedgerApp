@@ -10,9 +10,13 @@ const StyledModal = styled.div`
   transform: translate(-50%, -50%);
   background-color: var(--color-grey-0);
   border-radius: var(--border-radius-lg);
+  /* transform: ; */
   box-shadow: var(--shadow-lg);
   /* padding: 3.2rem 4rem; */
   padding: 2.4rem 1.6rem 0;
+  @media (max-width: 55rem) {
+    padding: 1.6rem 1.6rem 0;
+  }
   transition: all 0.5s;
 `;
 

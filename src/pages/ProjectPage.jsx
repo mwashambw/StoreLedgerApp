@@ -110,7 +110,11 @@ function Project() {
           Total Items: <span>{items.length}</span>
         </ItemsNumber> */}
         <Search items={items} setItemsToRender={setItemsToRender} />
-        <Button type="primary" onClick={() => setOpenAddItemForm(true)}>
+        <Button
+          type="primary"
+          isScale={true}
+          onClick={() => setOpenAddItemForm(true)}
+        >
           <HiMiniPlus /> New Item
         </Button>
 

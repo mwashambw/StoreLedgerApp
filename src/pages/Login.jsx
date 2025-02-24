@@ -67,7 +67,7 @@ function Login() {
         </InputWithIcon>
 
         <AuthButtonContainer>
-          <Button type="primary">
+          <Button type="primary" disabled={isPending}>
             <TextInButton>
               {isPending ? (
                 <>

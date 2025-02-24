@@ -50,6 +50,14 @@ const NoProjectsMessage = styled.div`
   text-align: center;
 `;
 
+const DashBoardHeader = styled(Heading)`
+  @media (max-width: 36rem) {
+    font-size: 1.8rem;
+    /* display: flex;
+    flex-direction: column; */
+  }
+`;
+
 function Dashboard() {
   const [openModal, setOpenModal] = useState(false);
   const { isLoading, currentUser } = useCurrentUser();
@@ -70,7 +78,7 @@ function Dashboard() {
   const projects = currentUser.data.user.projects;
   return (
     <StyledDashboard>
-      <Heading as="h1">PROJECTS</Heading>
+      <DashBoardHeader>PROJECTS</DashBoardHeader>
       <Row type="horizontal">
         <ProjectNumber>
           Total Projects: <span>{projects.length}</span>
