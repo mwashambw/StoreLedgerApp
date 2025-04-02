@@ -44,7 +44,7 @@ function Items({ items }) {
     <ItemsProvider>
       <StyledItems>
         <ItemsHeader>
-          <p>Item</p>
+          <p>Item Name</p>
           <p>Received</p>
           <p>Used</p>
           <p>Balance</p>

@@ -75,9 +75,7 @@ function ItemForm({ onClose }) {
           type="number"
           placeholder="456"
           min={1}
-          {...register('receiptVoucherNumber', {
-            required: 'This field is required',
-          })}
+          {...register('receiptVoucherNumber')}
           disabled={isPending}
         />
       </InputContainer>

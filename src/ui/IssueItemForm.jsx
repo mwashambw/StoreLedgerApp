@@ -78,9 +78,7 @@ function IssueItemForm({ onClose, item, balance }) {
           type="number"
           min={1}
           placeholder="0451"
-          {...register('issueVoucherNumber', {
-            required: 'This field is required',
-          })}
+          {...register('issueVoucherNumber')}
           disabled={isPending}
         />
       </InputContainer>
