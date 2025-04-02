@@ -23,7 +23,7 @@ export function useStoreLedger(projectName) {
       // Trigger file download
       triggerLedgerDownload(response, projectName);
       // Nofity the user
-      toast.success('Store ledger downloaded successfully');
+      toast.success('Store ledger created successfully');
     },
     onError: (error) => {
       toast.error(error.message);
