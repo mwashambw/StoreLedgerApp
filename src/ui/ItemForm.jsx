@@ -68,7 +68,7 @@ function ItemForm({ onClose }) {
           disabled={isPending}
         />
       </InputContainer>
-      <InputContainer error={errors?.receivedFrom?.message}>
+      <InputContainer error={errors?.receiptVoucherNumber?.message}>
         <label htmlFor="receiptVoucher">Receipt Voucher Number</label>
         <input
           id="receiptVoucher"
