@@ -1,11 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-const FullPage = styled.div`
-  height: 100vh;
-  background-color: var(--color-grey-50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 const rotate = keyframes`
   to {
@@ -26,10 +19,4 @@ const Spinner = styled.div`
   animation: ${rotate} 1.5s infinite linear;
 `;
 
-export default (
-  <>
-    <FullPage>
-      <Spinner />
-    </FullPage>
-  </>
-);
+export default Spinner;
